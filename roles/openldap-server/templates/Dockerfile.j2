@@ -1,0 +1,6 @@
+FROM osixia/openldap
+ENV LDAP_ORGANISATION test
+ENV LDAP_DOMAIN test.com
+ENV LDAP_BASE_DN cn={{cn_name}},dc={{dc_name1}},dc={{dc_name2}}
+ENV LDAP_ADMIN_PASSWORD {{password}}
+ENV LDAP_CONFIG_PASSWORD {{password}}
